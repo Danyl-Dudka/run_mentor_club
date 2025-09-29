@@ -1,0 +1,40 @@
+.header_elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation_block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    margin-left: 25.5rem;
+    width: 34.125rem;
+}
+
+.nav_links {
+    list-style: none;
+    font-size: 16px;
+}
+.nav_links li {
+    margin-top: 6px;
+}
+
+.nav_links li:hover {
+    cursor: pointer
+}
+
+.contact_button_header {
+    width: 13.625rem;
+    height: 3.375rem;
+    background-color: transparent;
+    font-size: 18px;
+    color: white;
+    margin-right: 3.125rem;
+    margin-top: 2.5rem;
+}
+
+.contact_button_header:hover {
+    background-color: transparent !important;
+    border-color: rgb(156, 57, 206) !important;
+}
