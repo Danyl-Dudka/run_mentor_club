@@ -1,6 +1,6 @@
-import MainPageBody from "./MainPageBody";
-import MainPageFooter from "./MainPageFooter";
-import MainPageHeader from "./MainPageHeader";
+import MainPageBody from "./MainPageBody/MainPageBody";
+import MainPageFooter from "./MainPageFooter/MainPageFooter";
+import MainPageHeader from "./MainPageHeader/MainPageHeader";
 import './mainPage.css';
 
 export default function MainPage() {

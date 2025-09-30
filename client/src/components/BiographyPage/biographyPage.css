@@ -1,0 +1,84 @@
+.biography_page_wrapper {
+    height: 57.875rem;
+    background-color: #070707;
+}
+
+.first_block_biography {
+    display: flex;
+    padding-top: 48px;
+    padding-left: 44px;
+    box-sizing: border-box;
+}
+
+.running_description {
+    margin-top: -16px;
+    margin-left: 80px;
+    font-size: 18px;
+}
+
+.running_description .last_section {
+    margin-top: 52px;
+}
+
+.images_block_bio {
+    width: 42rem;
+}
+
+.paragraph_description {
+    width: 17.875rem;
+}
+
+.image_bio {
+    width: 20rem;
+    height: 20rem;
+    mix-blend-mode: luminosity;
+    cursor: pointer;
+}
+
+.image_bio:nth-child(2) {
+    margin-left: 20px;
+}
+
+.right_block {
+    position: absolute;
+    right: 48px;
+}
+
+.images_description {
+    margin-top: 70px;
+    font-size: 18px;
+}
+
+.owner_biography {
+    margin-top: -30px;
+    margin-left: 48px;
+    font-size: 96px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+
+.biography_white_description:nth-child(2),
+.biography_white_description:nth-child(3) {
+    margin-top: -150px;
+}
+
+.second_part_description {
+    margin-left: 36rem;
+}
+
+.yellow_part_description {
+    margin-left: 38rem;
+    color: #C7FD1c;
+}
+
+.mentor_word_yellow {
+    color: #C7FD1c;
+}
+
+.second_part_club_word {
+    margin-left: 28rem;
+    color: #C7FD1c;
+}

@@ -1,0 +1,106 @@
+.running_reason_wrapper {
+    height: 49.5rem;
+    background-color: #C7FD1C;
+    color: black;
+}
+
+.first_block_reasons {
+    box-sizing: border-box;
+    margin-left: 5.25rem;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.yellow_card_reason {
+    width: 236px;
+    height: 206px;
+    cursor: pointer;
+    background-color: #C7FD1C;
+    border-top: 1px solid #eeece3;
+    border-left: 1px solid #eeece3;
+    border-bottom: 1px solid #070707;
+    border-right: 1px solid #070707;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+    box-sizing: border-box;
+    margin-right: 24px;
+    margin-bottom: 40px;
+}
+
+.first_block_cards {
+    display: flex;
+    max-width: 40rem;
+}
+
+.yellow_card_reason:nth-child(2) {
+    margin-left: 8rem;
+}
+
+.yellow_card_reason.freedom {
+    margin-right: 10rem;
+}
+
+.black_text_reason.where {
+    height: 100px;
+    font-size: 96px;
+    font-weight: 800;
+    line-height: 100px;
+    letter-spacing: -0.04em;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.black_text_reason.are {
+    height: 100px;
+    font-size: 96px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 800;
+    line-height: 100px;
+    letter-spacing: -0.04em;
+    margin-left: 10rem;
+}
+
+.black_text_reason.you {
+    font-family: "Bebas Neue", sans-serif;
+    height: 100px;
+    font-size: 84px;
+    font-weight: 800;
+    line-height: 100px;
+    letter-spacing: -0.04em;
+    margin-right: 50rem;
+}
+
+.black_text_reason.running {
+    font-family: "Bebas Neue", sans-serif;
+    height: 100px;
+    font-size: 84px;
+    font-weight: 800;
+    line-height: 100px;
+    letter-spacing: -0.04em;
+    margin-right: 20rem;
+}
+
+.yellow_card_reason.mind {
+    margin-left: 14rem;
+}
+
+.third_block_reasons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fourth_block_reasons {
+    display: flex;
+    justify-content: center;
+}
+
+.second_block_reasons {
+    margin-left: 5.25rem;
+    display: flex;
+}
