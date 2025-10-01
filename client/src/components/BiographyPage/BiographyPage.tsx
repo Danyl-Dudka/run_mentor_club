@@ -1,7 +1,7 @@
 import './biographyPage.css'
 export default function BiographyPage() {
     return (
-        <div className="biography_page_wrapper">
+        <div className="biography_page_wrapper" id='about_page'>
             <div className="first_block_biography">
                 <div className='images_block_bio'>
                     <img src="/images/biography_page_img_1.jpg" alt="image_one" className="image_bio" />

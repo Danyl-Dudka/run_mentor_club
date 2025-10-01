@@ -1,0 +1,87 @@
+.pricing_page_wrapper {
+    min-height: 56rem;
+    background-color: #070707;
+}
+
+.pricing_page_title {
+    font-size: 64px;
+    padding-top: 54px;
+    padding-left: 48px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: -0.02em;
+    color: #C7FD1C;
+    box-sizing: border-box;
+}
+
+.pricing_cards {
+    display: flex;
+    margin-top: 60px;
+}
+
+.pricing_card {
+    cursor: pointer;
+    width: 28.75rem;
+    height: 35.375rem;
+    margin: 0 auto;
+    background-color: #CECECE;
+}
+
+.pricing_button {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.pricing_card_button {
+    margin-bottom: 38px;
+    width: 24.25rem;
+    height: 3.875rem;
+    font-size: 22px;
+    background-color: rgba(128, 128, 128, 0.84);
+    color: white;
+    border: 1px solid white !important;
+    border-radius: 4px !important;
+}
+
+.pricing_card_button:hover {
+    background-color: #070707 !important;
+    color: white !important;
+    border: 1px solid white !important;
+    border-radius: 4px !important;
+}
+
+.pricing_card_button:active {
+    border: 1px solid white !Important;
+}
+
+.cards_detais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
+}
+
+.details_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3.6rem;
+    width: 22rem;
+    height: 20rem;
+    background-color: #9795955c;
+    box-sizing: border-box;
+}
+
+.amount_details {
+    font-weight: 800;
+    font-size: 32px;
+}
+.description_details {
+    font-size: 26px;
+    text-align: center;
+}
+.price_details {
+    margin-top: 4px;
+    font-size: 24px;
+}

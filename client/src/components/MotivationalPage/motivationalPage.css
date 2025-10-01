@@ -1,0 +1,63 @@
+.motivational_page_wrapper {
+    background-color: #070707;
+    min-height: 54rem;
+}
+
+.motivational_title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 3.75rem;
+    box-sizing: border-box;
+    font-size: 96px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.first_part_motivational_title,
+.second_part_motivational_title {
+    display: block;
+    padding-right: 60px;
+}
+
+
+.second_part_motivational_title {
+    margin-top: -4rem;
+}
+
+.yellow_word {
+    color: #C7FD1C;
+}
+
+.motivational_first_description {
+    width: 17.785rem;
+    margin: 2.25rem auto;
+    font-size: 18px;
+}
+
+.motivational_second_description {
+    width: 17.785rem;
+    font-size: 18px;
+    margin-left: 48px;
+}
+
+.contact_me_btn {
+    width: 13.625rem;
+    height: 3.375rem;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #C7FD1C;
+    margin-right: 3.125rem;
+}
+
+.contact_me_button_mp {
+    display: flex;
+    justify-content: center;
+}
+
+.contact_me_btn:hover {
+    background-color: #A3CE1A !important;
+    color: black !important;
+    border-color: black !important;
+}
