@@ -1,0 +1,115 @@
+.statistics_page_wrapper {
+    min-height: 68rem;
+    background-color: #CECECE;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2.7rem;
+    box-sizing: border-box;
+}
+
+.stat_title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 7.5rem;
+    line-height: 1;
+    font-family: "Bebas Neue", sans-serif;
+    margin-right: 9rem;
+    letter-spacing: -0.04em;
+}
+
+.stat_title_first_part {
+    padding-right: 28rem;
+}
+
+.stat_title_first_part .yellow_word {
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+}
+
+.stat_title_second_part .yellow_word {
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+}
+
+.stats_wrapper {
+    position: relative
+}
+
+.stats_amount ul {
+    list-style: none;
+}
+
+.stat_title_second_part {
+    margin-top: -1.8rem;
+}
+
+.stats_li_element {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #857F7F;
+    box-sizing: border-box;
+}
+
+.stats_block_ul {
+    padding-left: 10.5rem;
+    padding-right: 10.5rem
+}
+
+.stats_li_element::marker {
+    color: black;
+    font-weight: 1.5rem;
+}
+
+.stats_amount_element {
+    font-size: 120px;
+    font-weight: 200;
+    color: black;
+    margin-left: 1rem;
+}
+
+.stats_li_element::before {
+    content: "•";
+    position: absolute;
+    left: 9rem;
+    color: black;
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 7rem;
+}
+
+.stats_block_ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.stats_description_element {
+    width: 350px;
+    font-size: 18px;
+    color: #000000;
+}
+
+
+.img_block_stats {
+    position: absolute;
+    top: 8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.img_stats {
+    width: clamp(150px, 20vw, 250px);
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
