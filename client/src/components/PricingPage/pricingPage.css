@@ -24,8 +24,12 @@
     height: 35.375rem;
     margin: 0 auto;
     background-color: #CECECE;
+    transition: transform 0.3s ease-in-out;
 }
 
+.pricing_card:hover {
+    transform: scale(1.02);
+}
 .pricing_button {
     display: flex;
     justify-content: center;
@@ -77,10 +81,12 @@
     font-weight: 800;
     font-size: 32px;
 }
+
 .description_details {
     font-size: 26px;
     text-align: center;
 }
+
 .price_details {
     margin-top: 4px;
     font-size: 24px;

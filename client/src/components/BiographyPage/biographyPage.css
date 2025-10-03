@@ -33,6 +33,11 @@
     height: 20rem;
     mix-blend-mode: luminosity;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image_bio:hover {
+    transform: scale(1.05);
 }
 
 .image_bio:nth-child(2) {

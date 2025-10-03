@@ -20,6 +20,7 @@
 
 .stat_title_first_part {
     padding-right: 28rem;
+    color: black
 }
 
 .stat_title_first_part .yellow_word {
@@ -48,6 +49,7 @@
 
 .stat_title_second_part {
     margin-top: -1.8rem;
+    color: black;
 }
 
 .stats_li_element {
@@ -103,7 +105,6 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-    pointer-events: none;
 }
 
 .img_stats {
@@ -112,4 +113,11 @@
     border-radius: 4px;
     object-fit: cover;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.img_stats:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.35);
 }
