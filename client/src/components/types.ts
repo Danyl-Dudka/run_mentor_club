@@ -5,3 +5,9 @@ export interface PriceProps {
     price: string,
     background: string
 }
+
+export interface AccordionProps {
+    number: string,
+    title: string,
+    description: string | React.ReactNode,
+}

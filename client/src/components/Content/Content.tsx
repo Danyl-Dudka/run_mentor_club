@@ -1,4 +1,5 @@
 import BiographyPage from "../BiographyPage/BiographyPage";
+import FaqPage from "../FaqPage/FaqPage";
 import MainPage from "../MainPage/MainPage";
 import MotivationalPage from "../MotivationalPage/MotivationalPage";
 import PricingPage from "../PricingPage/PricingPage";
@@ -14,6 +15,7 @@ export default function Content() {
       <MotivationalPage />
       <PricingPage />
       <StatisticsPage />
+      <FaqPage />
     </>
   )
 }

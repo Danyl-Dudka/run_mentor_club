@@ -1,0 +1,16 @@
+.faq_page_wrapper {
+    background-color: #CECECE;
+    font-family: "Bebas Neue", sans-serif;
+    padding-bottom: 6rem;
+    box-sizing: border-box;
+}
+
+.faq_page_title {
+    padding: 48px 56px;
+    box-sizing: border-box;
+}
+
+.faq_title {
+    color: black;
+    font-size: 64px;
+}
