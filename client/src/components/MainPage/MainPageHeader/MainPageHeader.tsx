@@ -11,14 +11,24 @@ export default function MainPageHeader() {
     const pricePage = document.getElementById('pricing_page');
     pricePage?.scrollIntoView({ behavior: 'smooth' })
   }
+
+  const scrollToFaq = () => {
+    const faqPage = document.getElementById('faq_page');
+    faqPage?.scrollIntoView({ behavior: 'smooth' })
+  };
+
+  const scrollToContact = () => {
+    const contactPage = document.getElementById('contact_page');
+    contactPage?.scrollIntoView({ behavior: 'smooth' })
+  }
   return (
     <div className='header_elements'>
       <div className='navigation_block'>
         <ul className='nav_links'>
           <li onClick={scrollToAbout}>About</li>
           <li onClick={scrollToPrice}>Pricing</li>
-          <li>FAQ</li>
-          <li>Contact</li>
+          <li onClick={scrollToFaq}>FAQ</li>
+          <li onClick={scrollToContact}>Contact</li>
         </ul>
         <ul className='nav_links'>
           <li>Instagram</li>

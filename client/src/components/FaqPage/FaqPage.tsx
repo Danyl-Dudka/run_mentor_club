@@ -28,7 +28,7 @@ export default function FaqPage() {
         },
     ];
     return (
-        <div className="faq_page_wrapper">
+        <div className="faq_page_wrapper" id='faq_page'>
             <div className='faq_page_title'>
                 <span className='faq_title'>FAQ /</span>
             </div>

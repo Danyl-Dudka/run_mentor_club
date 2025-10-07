@@ -41,13 +41,11 @@
     justify-content: center;
     overflow: hidden;
     max-height: 0;
-    opacity: 0;
-    transition: max-height 0.5s ease, opacity 0.35s ease;
+    transition: max-height 0.5s ease;
 }
 
 .accordion_description.open {
     max-height: 500px;
-    opacity: 1;
 }
 
 .accordion_description span {

@@ -1,0 +1,150 @@
+.contact_page_wrapper {
+    height: 78rem;
+    background-color: #CECECE;
+}
+
+.upper_part_contact_page {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img_contact {
+    width: 28.75rem;
+    height: 29.125rem;
+    margin-top: 9.75rem;
+    margin-left: 10.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.img_contact:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.35);
+}
+
+.first_title_contact {
+    font-size: 60px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.second_title_contact {
+    display: block;
+    font-size: 24px;
+    font-family: "Bebas Neue", sans-serif;
+    margin-left: 38rem;
+}
+
+.contact_titles {
+    margin-top: 4.2rem;
+    margin-right: 10rem;
+}
+
+.form_inputs {
+    margin-top: 5rem;
+    margin-right: 5rem;
+}
+
+.contact_input {
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+    height: 3rem;
+}
+
+.contact_input:nth-child(2) {
+    margin-top: 2.5rem;
+}
+
+.contact_input:last-child {
+    margin-top: 2.5rem;
+}
+
+.contact_submit_button {
+    width: 13.625rem;
+    height: 3.375rem;
+    background-color: #C7FD1C;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-top: 4.875rem;
+}
+
+.contact_submit_button:hover {
+    background-color: #A3CE1A !important;
+    color: black !important;
+    border-color: black !important;
+}
+
+.navigation_contacts_block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9.5rem;
+}
+
+.nav_links_contacts {
+    list-style: none;
+}
+
+.social_media_links_contacts {
+    list-style: none;
+}
+
+.author_info_contacts {
+    list-style: none;
+}
+
+.li_link_contacts {
+    position: relative;
+    font-size: 18px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.li_info_contacts {
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+.author_info_contacts {
+    margin-right: 5rem;
+}
+
+.li_link_contacts:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.4s ease-in-out;
+}
+
+.nav_links_contacts {
+    margin-left: -2rem;
+}
+
+.li_link_contacts:hover:after {
+    width: 100%;
+}
+
+
+.lower_part_contact_page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: "Bebas Neue", sans-serif;
+    color: black;
+    height: 304px;
+    overflow: hidden;
+}
+
+.title_contacts_page {
+    margin-top: 7.8rem;
+    font-size: 256px;
+    line-height: 1;
+    padding: 0;
+}

@@ -49,6 +49,7 @@
     color: white;
     margin-right: 3.125rem;
     margin-top: 2.5rem;
+    border-radius: 2px;
 }
 
 .contact_button_header:hover {
