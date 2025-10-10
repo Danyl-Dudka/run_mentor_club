@@ -1,5 +1,6 @@
 import { Button } from 'antd'
 import './motivationalPage.css'
+import ScrollToContact from '../NavigationFunctions/ScrollToContact'
 export default function MotivationalPage() {
     return (
         <div className="motivational_page_wrapper">
@@ -25,7 +26,7 @@ export default function MotivationalPage() {
                     Running it’s a lifestyle.</p>
             </div>
             <div className='contact_me_button_mp'>
-                <Button className='contact_me_btn'>CONTACT ME</Button>
+                <Button className='contact_me_btn' onClick={ScrollToContact}>CONTACT ME</Button>
             </div>
         </div>
     )

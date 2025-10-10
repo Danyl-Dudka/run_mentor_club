@@ -29,7 +29,7 @@
 .accordion_icon {
     font-size: 3rem;
     margin-right: 10rem;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-in-out;
 }
 
 .accordion_icon.open {

@@ -56,8 +56,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 180px;
     border-bottom: 1px solid #857F7F;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .stats_block_ul {
@@ -71,21 +73,21 @@
 }
 
 .stats_amount_element {
+    cursor: pointer;
     font-size: 120px;
     font-weight: 200;
     color: black;
     margin-left: 1rem;
+    overflow: hidden;
+    margin-top: 7.4rem;
+    transition: 0.4s ease-in-out;
 }
 
-.stats_li_element::before {
-    content: "•";
-    position: absolute;
-    left: 9rem;
-    color: black;
-    font-size: 3rem;
-    line-height: 1;
-    margin-bottom: 7rem;
+.stats_amount_element:hover {
+    margin-top: 2rem;
 }
+
+
 
 .stats_block_ul {
     display: flex;

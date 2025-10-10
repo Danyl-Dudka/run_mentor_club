@@ -147,4 +147,9 @@
     font-size: 256px;
     line-height: 1;
     padding: 0;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.title_contacts_page:hover {
+    margin-top: 5rem;
 }

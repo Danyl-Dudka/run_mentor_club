@@ -1,5 +1,6 @@
 import { Button } from 'antd'
 import './mainPageBody.css'
+import ScrollToAbout from '../../NavigationFunctions/ScrollToAbout'
 
 export default function MainPageBody() {
   return (
@@ -16,7 +17,7 @@ export default function MainPageBody() {
           Unlock your potential with expert mentorship
           and a powerful running community
         </p>
-        <Button className='get_started_button'>GET STARTED</Button>
+        <Button className='get_started_button' onClick={ScrollToAbout}>GET STARTED</Button>
       </div>
     </div>
   )
