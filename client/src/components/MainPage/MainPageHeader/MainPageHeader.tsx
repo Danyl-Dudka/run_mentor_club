@@ -4,6 +4,9 @@ import ScrollToAbout from '../../NavigationFunctions/ScrollToAbout';
 import ScrollToPrice from '../../NavigationFunctions/ScrollToPrice';
 import ScrollToFaq from '../../NavigationFunctions/ScrollToFaq';
 import ScrollToContact from '../../NavigationFunctions/ScrollToContact';
+import NavigateToInstagram from '../../NavigationFunctions/NavigateToInstagram';
+import NavigateToTelegram from '../../NavigationFunctions/NavigateToTelegram';
+import NavigateToLinkedin from '../../NavigationFunctions/NavigateToLinkedin';
 
 export default function MainPageHeader() {
   return (
@@ -16,9 +19,9 @@ export default function MainPageHeader() {
           <li onClick={ScrollToContact}>Contact</li>
         </ul>
         <ul className='nav_links'>
-          <li>Instagram</li>
-          <li>Telegram</li>
-          <li>Linkedin</li>
+          <li onClick={NavigateToInstagram}>Instagram</li>
+          <li onClick={NavigateToTelegram}>Telegram</li>
+          <li onClick={NavigateToLinkedin}>Linkedin</li>
         </ul>
       </div>
       <Button

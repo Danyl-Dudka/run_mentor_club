@@ -56,7 +56,7 @@
     margin-top: 2.5rem;
 }
 
-.contact_input:last-child {
+.contact_input:nth-child(3) {
     margin-top: 2.5rem;
 }
 
