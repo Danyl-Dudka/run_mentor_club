@@ -4,8 +4,8 @@ export default function BiographyPage() {
         <div className="biography_page_wrapper" id='about_page'>
             <div className="first_block_biography">
                 <div className='images_block_bio'>
-                    <img src="/images/biography_page_img_1.jpg" alt="image_one" className="image_bio" />
-                    <img src="/images/biography_page_img_2.jpg" alt="image_two" className="image_bio" />
+                    <img src="/run_mentor_club/images/biography_page_img_1.jpg" alt="image_one" className="image_bio" />
+                    <img src="/run_mentor_club/images/biography_page_img_2.jpg" alt="image_two" className="image_bio" />
                     <p className='images_description'>Run Mentor Club is more than just running. </p>
                 </div>
                 <div className='running_description'>
@@ -14,7 +14,7 @@ export default function BiographyPage() {
                         It clears my head, resets my focus and fills me with energy to chase what matters. It taught me discipline, resilience and how to keep going no matter what.</p>
                 </div>
                 <div className='right_block'>
-                    <img src="/images/biography_page_img_3.jpg" alt="image_three" className="image_bio" />
+                    <img src="/run_mentor_club/images/biography_page_img_3.jpg" alt="image_three" className="image_bio" />
                 </div>
             </div>
             <div className="owner_biography">

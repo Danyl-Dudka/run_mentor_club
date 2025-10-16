@@ -59,7 +59,7 @@ export default function ContactPage() {
             )}
             <div className='upper_part_contact_page'>
                 <div className='img_block_contact'>
-                    <img src="/images/contact_page_img.jpg" alt="contacts_page_image" className='img_contact' />
+                    <img src="/run_mentor_club/images/contact_page_img.jpg" alt="contacts_page_image" className='img_contact' />
                 </div>
                 <div className='form_contact'>
                     <div className='contact_titles'>

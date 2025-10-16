@@ -28,7 +28,7 @@ export default function StatisticsPage() {
                     </ul>
                 </div>
                 <div className='img_block_stats'>
-                    <img className="img_stats" src="/images/stats_img.jpg" alt="running_girl" />
+                    <img className="img_stats" src="/run_mentor_club/images/stats_img.jpg" alt="running_girl" />
                 </div>
             </div>
         </div>
