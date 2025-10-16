@@ -1,12 +1,13 @@
-import { Button, Input } from 'antd';
+import { Button, Input, Spin } from 'antd';
 import './contactPage.css';
 import ScrollToAbout from '../NavigationFunctions/ScrollToAbout';
 import ScrollToPrice from '../NavigationFunctions/ScrollToPrice';
 import ScrollToFaq from '../NavigationFunctions/ScrollToFaq';
 import ScrollToContact from '../NavigationFunctions/ScrollToContact';
 import emailjs from 'emailjs-com';
+import { contactSchema } from '../validationSchemas/contactSchema';
+import * as Yup from 'yup';
 import { useState } from 'react';
-import { toast } from 'react-toastify';
 import NavigateToInstagram from '../NavigationFunctions/NavigateToInstagram';
 import NavigateToTelegram from '../NavigationFunctions/NavigateToTelegram';
 import NavigateToLinkedin from '../NavigationFunctions/NavigateToLinkedin';
@@ -14,30 +15,48 @@ export default function ContactPage() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
+    const [isSubmitted, setIsSubmitted] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
+    const [errors, setErrors] = useState<{ [key: string]: string }>({});
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        emailjs.sendForm(
-            import.meta.env.VITE_SERVICE_ID,
-            import.meta.env.VITE_TEMPLATE_ID,
-            e.target as HTMLFormElement,
-            import.meta.env.VITE_PUBLIC_KEY
-        )
-            .then(() => {
-                toast.success('Success! Your contact request has been submitted.')
-                setTimeout(() => {
-                    setName('');
-                    setEmail('');
-                    setPhoneNumber('');
-                    window.scrollTo({ top: 0, behavior: 'smooth' });;
-                }, 1500)
-            })
-            .catch((error) => {
-                console.error(error)
-            })
+        setIsLoading(true);
+        setErrors({});
+        try {
+            await contactSchema.validate({ name, email, phoneNumber }, { abortEarly: false });
+
+            await emailjs.sendForm(
+                import.meta.env.VITE_SERVICE_ID,
+                import.meta.env.VITE_TEMPLATE_ID,
+                e.target as HTMLFormElement,
+                import.meta.env.VITE_PUBLIC_KEY
+            );
+            setName('');
+            setEmail('');
+            setPhoneNumber('');
+            setIsSubmitted(true);
+        } catch (error) {
+            if (error instanceof Yup.ValidationError) {
+                const newErrors: Record<string, string> = {};
+                error.inner.forEach((error) => {
+                    if (error.path) newErrors[error.path] = error.message;
+                })
+                setErrors(newErrors)
+            } else {
+                console.log(error)
+            }
+        } finally {
+            setIsLoading(false)
+        }
     }
     return (
         <div className="contact_page_wrapper" id='contact_page'>
+            {isLoading && (
+                <div className='loading_overlay'>
+                    <Spin size="large" tip="Sending..." />
+                </div>
+            )}
             <div className='upper_part_contact_page'>
                 <div className='img_block_contact'>
                     <img src="/images/contact_page_img.jpg" alt="contacts_page_image" className='img_contact' />
@@ -47,15 +66,32 @@ export default function ContactPage() {
                         <span className='first_title_contact'>ARE YOU READY TO RUN WITH ME?</span>
                         <span className='second_title_contact'>YOUR GOAL IS MY FOCUS</span>
                     </div>
-                    <form className='form_inputs' onSubmit={handleSubmit}>
-                        <div className='form_inputs'>
-                            <Input name='name' value={name} className='contact_input' variant='borderless' placeholder='Name' onChange={(e) => setName(e.target.value)} />
-                            <Input name='email' value={email} className='contact_input' variant='borderless' placeholder='Email' onChange={(e) => setEmail(e.target.value)} />
-                            <Input name='phoneNumber' value={phoneNumber} className='contact_input' variant='borderless' placeholder='Phone number' onChange={(e) => setPhoneNumber(e.target.value)} />
+                    {isSubmitted ? (
+                        <div className='submitted_results fade_in'>
+                            <h2 className='submitted_title'>Thank you!</h2>
+                            <p className='submitted_text'>Your message has been sent successfully.<br />
+                                I’ll get back to you as soon as possible!
+                            </p>
                         </div>
-                        <Button className='contact_submit_button' htmlType='submit'>SUBMIT</Button>
-                    </form>
-
+                    ) : (
+                        <form className='form_inputs' onSubmit={handleSubmit}>
+                            <div className='form_inputs'>
+                                <div className='form_input_wrapper'>
+                                    <Input name='name' value={name} className='contact_input' variant='borderless' placeholder='Name' onChange={(e) => setName(e.target.value)} />
+                                    {errors.name && <div className='error_text'>{errors.name}</div>}
+                                </div>
+                                <div className='form_input_wrapper'>
+                                    <Input name='email' value={email} className='contact_input' variant='borderless' placeholder='Email' onChange={(e) => setEmail(e.target.value)} />
+                                    {errors.email && <div className='error_text'>{errors.email}</div>}
+                                </div>
+                                <div className='form_input_wrapper'>
+                                    <Input name='phoneNumber' value={phoneNumber} className='contact_input' variant='borderless' placeholder='Phone number' onChange={(e) => setPhoneNumber(e.target.value)} />
+                                    {errors.phoneNumber && <div className='error_text'>{errors.phoneNumber}</div>}
+                                </div>
+                            </div>
+                            <Button className='contact_submit_button' htmlType='submit' loading={isLoading}>{isLoading ? 'Sending...' : 'SUBMIT'}</Button>
+                        </form>
+                    )}
                     <div className='navigation_contacts_block'>
                         <ul className='nav_links_contacts'>
                             <li onClick={ScrollToAbout} className='li_link_contacts'>About</li>

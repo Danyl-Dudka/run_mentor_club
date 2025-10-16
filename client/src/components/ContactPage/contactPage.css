@@ -1,5 +1,6 @@
 .contact_page_wrapper {
-    height: 78rem;
+    min-height: 78rem;
+    max-height: 84.2rem;
     background-color: #CECECE;
 }
 
@@ -150,6 +151,81 @@
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
+
 .title_contacts_page:hover {
     margin-top: 5rem;
+}
+
+.loading_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.submitted_results {
+    height: 16rem;
+    margin-right: 10rem;
+    margin-top: 4rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    letter-spacing: 0.06em;
+    background: #ffffffae;
+    border: 2px solid rgba(57, 211, 62, 0.1);
+    backdrop-filter: blur(8px);
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.submitted_title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #38b000;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #38b000, #70e000);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.submitted_text {
+    font-size: 1.6rem;
+    color: #2f2f2f;
+    line-height: 1.4;
+    margin-top: -1rem;
+}
+
+.fade_in {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.error_text {
+    color: red;
+    font-size: 1rem;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+.form_input_wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
