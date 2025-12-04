@@ -103,7 +103,7 @@
 
 .img_block_stats {
     position: absolute;
-    top: 8rem;
+    top: 5rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
