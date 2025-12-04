@@ -174,8 +174,6 @@
     text-align: center;
     padding: 3rem 2rem;
     letter-spacing: 0.06em;
-    background: #ffffffae;
-    border: 2px solid rgba(57, 211, 62, 0.1);
     backdrop-filter: blur(8px);
     font-family: "Bebas Neue", sans-serif;
 }
