@@ -57,3 +57,16 @@
     color: white !important;
     border-color: white !important;
 }
+
+@media (max-width: 768px) {
+    .navigation_block {
+        display: none;
+    }
+    .contact_button_header {
+        position: absolute;
+        top: 650px;
+        width: 90%;
+        left: 22px;
+        font-weight: 600;
+    }
+}

@@ -1,14 +1,32 @@
 .footer_elements {
     display: flex;
     justify-content: space-between;
-    color: black;
+    color: white;
     font-size: 22px;
     font-weight: 500;
     margin-top: 4rem;
 }
+
 .location_span {
     margin-left: 3rem;
 }
+
 .year_span {
     margin-right: 2rem;
+}
+
+@media (max-width: 768px) {
+    .footer_elements {
+        font-size: 16px;
+        justify-content: space-between;
+    }
+
+    .location_span {
+        margin-left: 20px;
+    }
+
+    .year_span {
+        margin-right: 20px;
+    }
+
 }
