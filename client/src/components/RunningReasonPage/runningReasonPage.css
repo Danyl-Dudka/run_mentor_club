@@ -161,10 +161,6 @@
         height: 150px;
         margin: 0.5rem;
         font-size: 18px;
-        border-top: 1px solid #070707;
-        border-left: 1px solid #070707;
-        border-bottom: 1px solid #070707;
-        border-right: 1px solid #070707;
     }
 
     .yellow_card_reason:nth-child(2),
