@@ -60,13 +60,17 @@
 
 @media (max-width: 768px) {
     .navigation_block {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: 0rem;
+    }
+
+    .nav_links {
         display: none;
     }
+
     .contact_button_header {
-        position: absolute;
-        top: 650px;
-        width: 90%;
-        left: 22px;
+        width: 40%;
         font-weight: 600;
     }
 }

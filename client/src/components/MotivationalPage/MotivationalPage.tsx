@@ -6,7 +6,7 @@ export default function MotivationalPage() {
         <div className="motivational_page_wrapper">
             <div className='motivational_title'>
                 <span className='first_part_motivational_title'>I’M NOT A PROFESSIONAL ATHLETE</span>
-                <span className='second_part_motivational_title'>I’M <span className='yellow_word'>JUST</span> LIKE YOU.</span>
+                <span className='second_part_motivational_title'>I’M <span className='yellow_word'>JUST</span> LIKE <span className='you_key_word'>YOU.</span></span>
             </div>
             <div className='motivational_first_description'>
                 <p className='descr_about'>

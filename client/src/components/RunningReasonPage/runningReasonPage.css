@@ -109,3 +109,69 @@
     margin-left: 5.25rem;
     display: flex;
 }
+
+@media (max-width: 768px) {
+    .running_reason_wrapper {
+        box-sizing: border-box;
+        padding: 1rem;
+    }
+
+    .running_reason_wrapper::before {
+        content: "WHERE ARE YOU RUNNING?";
+        display: block;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 1.1;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .black_text_reason.where,
+    .black_text_reason.are,
+    .black_text_reason.you,
+    .black_text_reason.running {
+        display: none !important;
+    }
+
+    .first_block_reasons,
+    .second_block_reasons,
+    .third_block_reasons,
+    .fourth_block_reasons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0;
+        padding: 0;
+    }
+
+    .first_block_cards,
+    .first_block_reasons,
+    .second_block_reasons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .yellow_card_reason {
+        width: 180px;
+        height: 150px;
+        margin: 0.5rem;
+        font-size: 18px;
+    }
+
+    .yellow_card_reason:nth-child(2),
+    .yellow_card_reason.freedom,
+    .yellow_card_reason.mind {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .third_block_reasons,
+    .fourth_block_reasons {
+        justify-content: center;
+    }
+}

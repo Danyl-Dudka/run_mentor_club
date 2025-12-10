@@ -15,7 +15,7 @@ export default function MainPageBody() {
           Every runner needs a guide.
           <br />
           Unlock your potential with expert mentorship
-          and a powerful running community
+          and a powerful running community.
         </p>
         <Button className='get_started_button' onClick={ScrollToAbout}>GET STARTED</Button>
       </div>

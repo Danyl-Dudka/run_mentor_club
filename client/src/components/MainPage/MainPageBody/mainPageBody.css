@@ -53,6 +53,7 @@
         font-size: 80px;
     }
 
+
     .main_title_span:nth-child(2) {
         margin-top: -58px;
         margin-left: 7.6rem;
@@ -64,17 +65,21 @@
     }
 
     .lower_part_body {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+
     .body_description {
-        margin-top: 240px;
+        margin-top: 10rem;
         font-size: 16px;
+        font-weight: 500;
         margin-left: 20px;
     }
+
     .get_started_button {
-        position: absolute;
-        width: 90%;
-        top: 754px;
-        left: 22px;
+        margin: 5rem auto 0 auto;
+        width: 80%;
     }
 }

@@ -14,3 +14,18 @@
     color: black;
     font-size: 64px;
 }
+
+@media (max-width: 758px) {
+    .faq_page_wrapper {
+        padding: 2rem 1rem 4rem 1rem;
+    }
+
+    .faq_page_title {
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .faq_title {
+        font-size: 36px;
+    }
+}

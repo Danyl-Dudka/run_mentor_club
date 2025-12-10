@@ -58,3 +58,39 @@
     color: #333;
     box-sizing: border-box;
 }
+
+@media (max-width:758px) {
+    .accordion_item {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .accordion_content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem
+    }
+
+    .number_of_accordion {
+        font-size: 18px;
+        margin-left: 0.5rem;
+    }
+
+    .accordion_title {
+        font-size: 20px;
+        text-align: left;
+        flex: 1;
+        margin: 0 0.5rem;
+    }
+
+    .accordion_icon {
+        font-size: 2rem;
+        margin-right: 0.5rem;
+    }
+
+    .accordion_description span {
+        font-size: 16px;
+        padding: 1rem;
+    }
+}

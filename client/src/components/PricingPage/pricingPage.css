@@ -30,6 +30,7 @@
 .pricing_card:hover {
     transform: scale(1.02);
 }
+
 .pricing_button {
     display: flex;
     justify-content: center;
@@ -90,4 +91,63 @@
 .price_details {
     margin-top: 4px;
     font-size: 24px;
+}
+
+@media (max-width: 768px) {
+
+    .pricing_page_title {
+        font-size: 48px;
+        padding-left: 1rem;
+        padding-top: 5rem;
+        text-align: center;
+    }
+
+    .pricing_cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+        gap: 3rem;
+    }
+
+    .pricing_card {
+        width: 80%;
+        height: 20rem;
+        margin: 0 auto;
+    }
+
+    .pricing_card:nth-child(3) {
+        margin-bottom: 4rem;
+    }
+
+    .pricing_card_button {
+        width: 90%;
+        font-size: 18px;
+        height: 3.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .cards_detais {
+        margin-top: 3rem;
+
+    }
+
+    .details_wrapper {
+        width: 80%;
+        height: 14rem;
+        padding: 1rem;
+    }
+
+    .amount_details {
+        font-size: 28px;
+    }
+
+    .description_details {
+        font-size: 20px;
+    }
+
+    .price_details {
+        font-size: 20px;
+        margin-top: 2px;
+    }
 }
