@@ -51,16 +51,17 @@
 
 .images_description {
     margin-top: 70px;
-    font-size: 18px;
+    font-size: 26px;
 }
 
 .owner_biography {
-    margin-top: -30px;
     margin-left: 48px;
     font-size: 96px;
+    margin-top: 100px;
     font-weight: 700;
     letter-spacing: -0.02em;
     font-family: "Bebas Neue", sans-serif;
+    line-height: 80px;
 }
 
 
