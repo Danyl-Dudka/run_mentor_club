@@ -151,3 +151,63 @@
         margin-top: 2px;
     }
 }
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .pricing_page_title {
+        font-size: 62px;
+        padding-left: 1rem;
+        padding-top: 5rem;
+        text-align: center;
+    }
+
+    .pricing_cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+        gap: 4rem;
+    }
+
+    .pricing_card {
+        width: 80%;
+        height: 30rem;
+        margin: 0 auto;
+    }
+
+    .pricing_card:nth-child(3) {
+        margin-bottom: 4rem;
+    }
+
+    .pricing_card_button {
+        width: 90%;
+        font-size: 22px;
+        height: 3.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .cards_detais {
+        margin-top: 3rem;
+
+    }
+
+    .details_wrapper {
+        width: 80%;
+        height: 20rem;
+        padding: 1rem;
+    }
+
+    .amount_details {
+        font-size: 36px;
+    }
+
+    .description_details {
+        font-size: 32px;
+    }
+
+    .price_details {
+        font-size: 32px;
+        margin-top: 20px;
+    }
+}

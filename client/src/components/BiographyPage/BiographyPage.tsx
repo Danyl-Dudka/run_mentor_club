@@ -19,7 +19,7 @@ export default function BiographyPage() {
             </div>
             <div className="owner_biography">
                 <p className='biography_white_description'>MY NAME IS <span className='second_part_description'>DANYL</span></p>
-                <p className='biography_white_description'>I’M UKRAINIAN, <span className='yellow_part_description'>RUN</span><span className='second_part_word'>NER,</span></p>
+                <p className='biography_white_description'>I’M UKRAINIAN <span className='yellow_part_description'>RUN</span><span className='second_part_word'>NER,</span></p>
                 <p className='biography_white_description'><span className='mentor_word_yellow'>MENTOR</span> AND <span className='second_part_club_word'>CLUB</span> <span className='owner_word_last_part'>OWNER.</span></p>
             </div>
         </div>

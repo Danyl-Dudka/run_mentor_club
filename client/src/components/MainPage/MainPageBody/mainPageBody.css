@@ -83,3 +83,39 @@
         width: 80%;
     }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .main_title_span {
+        font-size: 96px;
+    }
+
+
+    .main_title_span:nth-child(2) {
+        margin-top: -58px;
+        margin-left: 7.6rem;
+    }
+
+    .main_title_span:nth-child(3) {
+        margin-top: -58px;
+        margin-left: 16rem;
+    }
+
+    .lower_part_body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .body_description {
+        margin-top: 8rem;
+        font-size: 18px;
+        font-weight: 500;
+        margin-left: 20px;
+    }
+
+    .get_started_button {
+        margin: 5rem auto 0 auto;
+        width: 60%;
+    }
+}

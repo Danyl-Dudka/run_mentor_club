@@ -96,3 +96,27 @@
         margin: 2rem auto;
     }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .motivational_title {
+        padding: 2rem;
+    }
+
+
+    .second_part_motivational_title {
+        margin-top: -3rem;
+    }
+
+    .motivational_first_description {
+        margin: 1rem auto;
+    }
+
+    .motivational_second_description {
+        margin-top: 4rem;
+    }
+
+    .contact_me_btn {
+        width: 60%;
+        margin: 2rem auto;
+    }
+}

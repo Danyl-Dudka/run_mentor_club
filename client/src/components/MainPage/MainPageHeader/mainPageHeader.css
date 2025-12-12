@@ -74,3 +74,19 @@
         font-weight: 600;
     }
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navigation_block {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: 0rem;
+    }
+
+    .nav_links {
+        display: none;
+    }
+
+    .contact_button_header {
+        width: 30%;
+        font-weight: 600;
+    }
+}

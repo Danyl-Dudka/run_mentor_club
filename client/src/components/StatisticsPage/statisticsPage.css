@@ -191,6 +191,82 @@
     .img_block_stats {
         display: none;
     }
+
+    .stats_amount_element:hover {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .statistics_page_wrapper {
+        min-height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .stat_title {
+        font-size: 5rem;
+        line-height: 0.6;
+        align-items: center;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .stat_title_first_part {
+        padding-right: 0;
+    }
+
+    .stat_title_second_part {
+        margin-top: 1rem;
+    }
+
+    .stats_wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        position: relative;
+    }
+
+    .stats_block_ul {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .stats_li_element {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+        height: auto;
+        border-bottom: 1px solid #857F7F;
+        padding: 1rem 0;
+    }
+
+    .stats_amount_element {
+        font-size: 48px;
+        font-weight: 400;
+        margin: 0;
+        flex-shrink: 0;
+    }
+
+    .stats_description_element {
+        margin-left: 8rem;
+        font-size: 24px;
+        width: auto;
+        flex: 1;
+    }
+
+    .img_block_stats {
+        display: none;
+    }
+
     .stats_amount_element:hover {
         margin-top: 0;
     }
