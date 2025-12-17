@@ -5,15 +5,14 @@
 
 .first_block_biography {
     display: flex;
-    padding-top: 48px;
+    justify-content: space-around;
+    padding-top: 5rem;
     padding-left: 44px;
     box-sizing: border-box;
 }
 
 .running_description {
-    margin-top: -16px;
-    margin-left: 80px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .running_description .last_section {
@@ -44,8 +43,8 @@
     margin-left: 20px;
 }
 
-.right_block {
-    margin-left: 20px;
+.image_bio:last-child {
+    margin-right: 44px;
 }
 
 .images_description {
@@ -61,15 +60,19 @@
     letter-spacing: -0.02em;
     font-family: "Bebas Neue", sans-serif;
     line-height: 80px;
+    margin-right: 100px;
 }
 
+.biography_white_description {
+    display: flex;
+    justify-content: space-between;
+}
 
 .second_part_description {
-    margin-left: 36rem;
+    margin-right: 8rem;
 }
 
 .yellow_part_description {
-    margin-left: 38rem;
     color: #C7FD1c;
 }
 
@@ -78,7 +81,6 @@
 }
 
 .second_part_club_word {
-    margin-left: 28rem;
     color: #C7FD1c;
 }
 
@@ -98,6 +100,7 @@
     }
 
     .biography_white_description {
+        display: block;
         width: 160px;
         line-height: 30px;
     }
@@ -112,6 +115,10 @@
     .running_description {
         margin: 1rem 0;
         font-size: 16px;
+    }
+
+    .and_white_word {
+        margin-right: 6px;
     }
 
     .running_description .last_section {
@@ -182,6 +189,7 @@
     }
 
     .biography_white_description {
+        display: block;
         width: 400px;
         line-height: 46px;
     }
@@ -199,6 +207,10 @@
         margin: 1rem 0;
         font-size: 20px;
         margin-bottom: 2rem;
+    }
+
+    .and_white_word {
+        margin-right: 6px;
     }
 
     .running_description .last_section {
@@ -251,5 +263,49 @@
     .yellow_part_description,
     .second_part_club_word {
         margin-left: 0;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1439px) {
+    .biography_page_wrapper {
+        min-height: 46rem;
+    }
+
+    .images_block_bio {
+        width: 32rem;
+    }
+
+    .image_bio {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .images_description {
+        font-size: 18px;
+    }
+
+    .running_description {
+        font-size: 14px;
+        margin-left: 0px;
+    }
+
+    .biography_white_description {
+        display: block;
+    }
+
+    .right_block {
+        margin-left: 40px;
+    }
+
+    .second_part_description {
+        margin-left: 17rem;
+    }
+
+    .yellow_part_description {
+        margin-left: 17rem;
+    }
+
+    .second_part_club_word {
+        margin-left: 12rem;
     }
 }

@@ -94,3 +94,19 @@
         padding: 1rem;
     }
 }
+
+@media (min-width: 1025px) and (max-width: 1439px) {
+    .number_of_accordion {
+        font-size: 16px;
+    }
+    .accordion_title {
+        font-size: 30px;
+    }
+    .accordion_icon {
+        font-size: 2.4rem;
+    }
+    .accordion_description span {
+        font-size: 14px;
+        padding-bottom: 2rem;
+    }
+}

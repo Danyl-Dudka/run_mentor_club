@@ -1,5 +1,5 @@
 .contact_page_wrapper {
-  min-height: 76rem;
+  min-height: 68rem;
   max-height: 84.2rem;
   background-color: #CECECE;
 }
@@ -450,5 +450,71 @@
 
   .submitted_text {
     font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1439px) {
+  .contact_page_wrapper {
+    min-height: 58rem;
+  }
+
+  .img_contact {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .first_title_contact {
+    font-size: 42px;
+  }
+
+  .second_title_contact {
+    font-size: 20px;
+    padding-left: 16.6rem;
+  }
+
+  .contact_titles {
+    margin-top: 2rem;
+  }
+
+  .form_inputs {
+    margin-top: 2rem;
+  }
+
+  .contact_input {
+    font-size: 16px;
+    height: 2rem;
+  }
+
+  .contact_submit_button {
+    width: 8rem;
+    height: 2rem;
+    font-size: 16px;
+    margin-top: 3rem;
+  }
+
+  .li_link_contacts {
+    font-size: 12px;
+  }
+
+  .li_info_contacts {
+    font-size: 12px;
+  }
+
+  .title_contacts_page {
+    font-size: 160px;
+    margin-top: 11.8rem;
+  }
+
+  .title_contacts_page:hover {
+    margin-top: 10rem;
+  }
+  .submitted_results {
+    height: 12rem;
+  }
+  .submitted_title {
+    font-size: 2rem;
+  }
+  .submitted_text {
+    font-size: 1.2rem;
   }
 }

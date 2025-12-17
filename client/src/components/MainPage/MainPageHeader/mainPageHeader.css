@@ -14,7 +14,7 @@
 
 .nav_links {
     list-style: none;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .nav_links li {
@@ -74,6 +74,7 @@
         font-weight: 600;
     }
 }
+
 @media (min-width: 769px) and (max-width: 1024px) {
     .navigation_block {
         display: flex;
@@ -87,6 +88,24 @@
 
     .contact_button_header {
         width: 30%;
+        font-weight: 600;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1439px) {
+    .navigation_block {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: 0rem;
+    }
+
+    .nav_links {
+        display: none;
+    }
+
+    .contact_button_header {
+        width: 20%;
+        font-size: 18px;
         font-weight: 600;
     }
 }

@@ -47,3 +47,19 @@
     }
 
 }
+
+@media (min-width: 1025px) and (max-width: 1439px) {
+    .footer_elements {
+        font-size: 18px;
+        justify-content: space-between;
+    }
+
+    .location_span {
+        margin-left: 4rem;
+    }
+
+    .year_span {
+        margin-right: 4rem;
+    }
+
+}

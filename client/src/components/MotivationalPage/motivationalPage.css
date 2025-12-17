@@ -31,21 +31,21 @@
 }
 
 .motivational_first_description {
-    width: 17.785rem;
+    width: 18rem;
     margin: 2.25rem auto;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .motivational_second_description {
-    width: 17.785rem;
-    font-size: 18px;
+    width: 18rem;
+    font-size: 20px;
     margin-left: 48px;
 }
 
 .contact_me_btn {
     width: 13.625rem;
     height: 3.375rem;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     background-color: #C7FD1C;
     margin-right: 3.125rem;
@@ -118,5 +118,28 @@
     .contact_me_btn {
         width: 60%;
         margin: 2rem auto;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1439px) {
+    .motivational_page_wrapper {
+        min-height: 46rem;
+    }
+
+    .motivational_title {
+        font-size: 84px;
+    }
+
+    .motivational_first_description {
+        font-size: 16px;
+    }
+
+    .motivational_second_description {
+        width: 16rem;
+        font-size: 16px;
+    }
+
+    .contact_me_btn {
+        font-size: 18px;
     }
 }

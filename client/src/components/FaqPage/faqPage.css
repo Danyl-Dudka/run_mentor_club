@@ -29,3 +29,9 @@
         font-size: 36px;
     }
 }
+
+@media (min-width: 1025px) and (max-width: 1439px) {
+    .faq_title {
+        font-size: 48px;
+    }
+}

@@ -211,3 +211,43 @@
         margin-top: 20px;
     }
 }
+
+@media (min-width: 1025px) and (max-width: 1439px) {
+    .pricing_page_wrapper {
+        min-height: 48rem;
+    }
+    .pricing_page_title {
+        font-size: 54px;
+    }
+
+    .pricing_card {
+        width: 18rem;
+        height: 26rem;
+    }
+
+    .pricing_card_button {
+        width: 14rem;
+        height: 3rem;
+        font-size: 16px;
+    }
+
+    .details_wrapper {
+        padding-top: 0;
+        width: 16rem;
+        height: 12rem;
+    }
+
+    .amount_details {
+        margin-top: 6px;
+        font-size: 24px;
+    }
+
+    .description_details {
+        font-size: 20px;
+    }
+
+    .price_details {
+        margin-top: 12px;
+        font-size: 22px;
+    }
+}
