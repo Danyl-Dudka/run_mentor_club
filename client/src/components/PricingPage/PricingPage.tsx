@@ -11,7 +11,7 @@ export default function PricingPage() {
                 Clear mind
             </>,
             price: '$15',
-            background: '/run_mentor_club/images/first_card_image.jpg',
+            background: '/images/first_card_image.jpg',
         },
         {
             title: '01. Everyday mornings run',
@@ -22,7 +22,7 @@ export default function PricingPage() {
                 Good habit
             </>,
             price: '$10',
-            background: '/run_mentor_club/images/second_card_image.jpg',
+            background: '/images/second_card_image.jpg',
         },
         {
             title: '03. Free run with mentor',
@@ -33,7 +33,7 @@ export default function PricingPage() {
                 Once a month
             </>,
             price: 'Free',
-            background: '/run_mentor_club/images/third_card_image.jpg',
+            background: '/images/third_card_image.jpg',
         },
     ];
 
