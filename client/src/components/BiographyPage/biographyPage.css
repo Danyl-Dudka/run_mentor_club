@@ -94,15 +94,21 @@
 
     .owner_biography {
         order: 1;
-        font-size: 36px;
+        font-size: 64px;
         margin-top: 0;
         margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .yellow_white_biography {
+        display: flex;
+        gap: 6px;
     }
 
     .biography_white_description {
         display: block;
-        width: 160px;
-        line-height: 30px;
+        width: 260px;
+        line-height: 50px;
     }
 
     .first_block_biography {
